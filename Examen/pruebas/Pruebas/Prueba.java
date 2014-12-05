@@ -23,7 +23,7 @@ public class Prueba {
 	@Before
 	public void setUp() throws Exception {
 		tienda = new Store();
-		post = tienda.getPOST();
+		post = tienda.getPOSTCatalog();
 	}
 
 	@Test

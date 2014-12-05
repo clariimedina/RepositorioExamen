@@ -23,10 +23,10 @@ public class POST {
 		{
 			sale = new Sale();
 		}
-		createEspecification(upc, quantity);
+		createLineItem(upc, quantity);
 	}
 
-	public void createEspecification(int upc, int quantity) {
+	public void createLineItem(int upc, int quantity) {
 		ProductSpecification spec = productCatalog.specification( upc );
 		sale.makeLineItem(spec, quantity );
 	}
