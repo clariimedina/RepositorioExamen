@@ -28,6 +28,7 @@ class TestPost {
 		post.makePayment(650);
 
 		System.out.println("La feria es: ..."+ post.getSale().getBalance());
+		System.out.println("Venta finalizada");
 		
 	}
 }
