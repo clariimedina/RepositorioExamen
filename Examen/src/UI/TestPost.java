@@ -29,6 +29,6 @@ class TestPost {
 
 		System.out.println("La feria es: ..."+ post.getSale().getBalance());
 		
-		System.out.print("prueba");
+		System.out.print("prueba2");	
 	}
 }
