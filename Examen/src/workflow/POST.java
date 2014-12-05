@@ -23,6 +23,10 @@ public class POST {
 		{
 			sale = new Sale();
 		}
+		createEspecification(upc, quantity);
+	}
+
+	public void createEspecification(int upc, int quantity) {
 		ProductSpecification spec = productCatalog.specification( upc );
 		sale.makeLineItem( spec, quantity );
 	}
@@ -37,10 +41,10 @@ public class POST {
 		return ( sale == null ) || ( sale.isComplete() );
 	}
 
-        public float getTotal()
-        {
-          return sale.total();
-        }
+	public float getTotal()
+    {
+		return sale.total();
+    }
 
 	public Sale getSale()
 	{
