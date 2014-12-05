@@ -8,7 +8,7 @@ class TestPost {
 	public static void main(String[] args)
 	{
 		Store tienda = new Store();
-		POST post = tienda.getPOST();
+		POST post = tienda.getPOSTCatalog();
 
 		System.out.println("Capturo 1 articulo (COD=1) de a 100 pesos");
 		post.EnterItem(1,1);
