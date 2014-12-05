@@ -18,7 +18,9 @@ public class Sale {
 		isComplete = true;
 	}
 
-	public boolean isComplete() { return isComplete; }
+	public boolean isComplete() {
+		return isComplete; 
+	}
 
 	public void makeLineItem( ProductSpecification spec, int quantity )
 	{
