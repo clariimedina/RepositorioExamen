@@ -32,15 +32,14 @@ public class Sale {
 		float total = 0;
 		Enumeration	e = lineItems.elements();
 
-		while( e.hasMoreElements() )
-			{
+		while( e.hasMoreElements() ) {
 			total += ( (SaleLineItem) e.nextElement() ).subtotal();
 			}
 		return total;
 	}
 
-	public void makePayment( float cashTendered )
+	public void makePayment( float receivedCash )
 	{
-		payment = new Payment( cashTendered );
+		payment = new Payment( receivedCash );
 	}
 }

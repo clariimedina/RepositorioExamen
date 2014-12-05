@@ -28,12 +28,12 @@ public class POST {
 
 	public void createEspecification(int upc, int quantity) {
 		ProductSpecification spec = productCatalog.specification( upc );
-		sale.makeLineItem( spec, quantity );
+		sale.makeLineItem(spec, quantity );
 	}
 
-	public void makePayment( float cashTendered )
+	public void makePayment( float receivedCash )
 	{
-		sale.makePayment( cashTendered );
+		sale.makePayment( receivedCash );
 	}
 
 	private boolean isNewSale()

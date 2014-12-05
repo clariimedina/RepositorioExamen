@@ -3,12 +3,13 @@ package Domain;
 class Payment {
   private float amount;
 
-  public Payment(float cashTendered) {
-    this.amount = cashTendered;
+  public Payment(float receivedCash) {
+    this.amount = receivedCash;
   }
 
   public float getAmount() {
     return amount;
+    
   }
 
 }
